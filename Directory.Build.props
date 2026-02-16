@@ -1,0 +1,11 @@
+<Project>
+  <ItemGroup>
+    <PackageReference Include="SonarAnalyzer.CSharp" PrivateAssets="all" Condition="$(MSBuildProjectExtension) == '.csproj'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SonarQubeSetting Include="sonar.exclusions">
+      <Value>**/bin/**,**/obj/**</Value>
+    </SonarQubeSetting>
+  </ItemGroup>
+</Project>
