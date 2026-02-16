@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AspireAppOllama.ApiService/AspireAppOllama.ApiService.csproj" />
+  <Project Path="AspireAppOllama.AppHost/AspireAppOllama.AppHost.csproj" />
+  <Project Path="AspireAppOllama.ServiceDefaults/AspireAppOllama.ServiceDefaults.csproj" />
+  <Project Path="AspireAppOllama.Web/AspireAppOllama.Web.csproj" />
+</Solution>

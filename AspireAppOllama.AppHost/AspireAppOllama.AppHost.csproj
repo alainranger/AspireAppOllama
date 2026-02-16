@@ -1,0 +1,16 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.1.0">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>bca309f0-eac1-4a15-acaf-f437ce1baacf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireAppOllama.ApiService\AspireAppOllama.ApiService.csproj" />
+    <ProjectReference Include="..\AspireAppOllama.Web\AspireAppOllama.Web.csproj" />
+  </ItemGroup>
+
+</Project>
