@@ -1,12 +1,12 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 var apiService = builder.AddProject<Projects.AspireAppOllama_ApiService>("apiservice")
-    .WithHttpHealthCheck("/health");
+	.WithHttpHealthCheck("/health");
 
 builder.AddProject<Projects.AspireAppOllama_Web>("webfrontend")
-    .WithExternalHttpEndpoints()
-    .WithHttpHealthCheck("/health")
-    .WithReference(apiService)
-    .WaitFor(apiService);
+	.WithExternalHttpEndpoints()
+	.WithHttpHealthCheck("/health")
+	.WithReference(apiService)
+	.WaitFor(apiService);
 
-builder.Build().Run();
+await builder.Build().RunAsync();
